@@ -1,0 +1,102 @@
+:root {
+    --font:'Red Hat Display', sans-serif;
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+
+    /* Neutral*/
+
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+  font-family: var(--font);
+}
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--Paleblue);
+  box-shadow: 0px 10px 0px rgba(0,0,0,0.5);
+
+}
+.order-card{
+  width: 350px;
+  background-color: white;
+  border-radius: 2rem;
+}
+.order-card__img{
+  background-image: url(./images/illustration-hero.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 12.5rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+.order-card__info{
+  padding: 1rem;
+  text-align: center;
+
+}
+.info__title{
+  font-weight: 900;
+  color: var(--Darkblue);
+}
+.info__paragraph{
+  color: var(--Desaturatedblue);
+  line-height: 2rem;
+  padding: 0 1.3rem;
+  font-size: 16px;
+}
+.info__summary{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: var(--Verypaleblue);
+  border-radius: 1.5rem;
+  margin: 2rem 0;
+}
+.summary__detail{
+  text-align: left;
+}
+.summary__detail h2{
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--Darkblue);
+}
+.summary__detail span{
+  color: var(--Desaturatedblue);
+}
+.buttom{
+  border-style: none;
+  background: none;
+  width: 100%;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 1rem 0;
+
+}
+.buttom__primary{
+  color: white;
+  background-color: var(--Brightblue);
+  border-radius: 1rem;
+  box-shadow: 0px 20px 25px -10px rgba(0,0,0,0.4);
+}
+.buttom__secondary{
+  color: var(--Desaturatedblue);
+}
+/***Footer***/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
